@@ -1,0 +1,49 @@
+FLOYD-WARSHALL ALGORITHM (All-Pairs Shortest Path)
+=======================================================
+
+Initial Distance Matrix (Direct Edges):
+[0, 3, 'INF', 7]
+[8, 0, 2, 'INF']
+[5, 'INF', 0, 1]
+[2, 'INF', 'INF', 0]
+
+Final Shortest Distance Matrix:
+[0, 3, 5, 6]
+[5, 0, 2, 3]
+[3, 6, 0, 1]
+[2, 5, 7, 0]
+
+--- Step-wise Trace ---
+
+D(-1) Initial Matrix:
+[0, 3, 'INF', 7]
+[8, 0, 2, 'INF']
+[5, 'INF', 0, 1]
+[2, 'INF', 'INF', 0]
+
+D(0) After considering vertex 0 as intermediate:
+[0, 3, 'INF', 7]
+[8, 0, 2, 15]
+[5, 8, 0, 1]
+[2, 5, 'INF', 0]
+
+D(1) After considering vertex 1 as intermediate:
+[0, 3, 5, 7]
+[8, 0, 2, 15]
+[5, 8, 0, 1]
+[2, 5, 7, 0]
+
+D(2) After considering vertex 2 as intermediate:
+[0, 3, 5, 6]
+[7, 0, 2, 3]
+[5, 8, 0, 1]
+[2, 5, 7, 0]
+
+D(3) After considering vertex 3 as intermediate:
+[0, 3, 5, 6]
+[5, 0, 2, 3]
+[3, 6, 0, 1]
+[2, 5, 7, 0]
+
+Time Complexity: O(V^3)
+Space Complexity: O(V^2)
