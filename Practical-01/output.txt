@@ -1,0 +1,5 @@
+Size	Bubble	Selection	Insertion	Merge	Quick	(all times in microseconds)
+100	59	30		17		39	10
+1000	6508	2597		1789		438	151
+5000	155458	64727		45822		2445	887
+10000	625606	271398		189108		7097	2650

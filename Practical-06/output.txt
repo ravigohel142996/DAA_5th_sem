@@ -1,0 +1,3 @@
+Enter number of matrices: Enter dimensions of matrices:
+For matrices A1, A2, ..., An, enter 5 dimensions:
+Minimum number of scalar multiplications: 30000
