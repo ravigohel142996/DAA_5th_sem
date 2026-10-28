@@ -1,0 +1,25 @@
+KRUSKAL'S ALGORITHM
+Sorted edges (u, v, weight):
+  (1, 2, 1)
+  (1, 3, 2)
+  (3, 4, 2)
+  (0, 2, 3)
+  (0, 1, 4)
+  (2, 3, 4)
+  (4, 5, 6)
+  (3, 5, 7)
+Step 1: edge 1-2 (weight 1) -> ACCEPT
+Step 2: edge 1-3 (weight 2) -> ACCEPT
+Step 3: edge 3-4 (weight 2) -> ACCEPT
+Step 4: edge 0-2 (weight 3) -> ACCEPT
+Step 5: edge 0-1 (weight 4) -> REJECT (cycle)
+Step 6: edge 2-3 (weight 4) -> REJECT (cycle)
+Step 7: edge 4-5 (weight 6) -> ACCEPT
+MST has n-1 edges, stop.
+Edges in the MST:
+ 1 - 2 : 1
+ 1 - 3 : 2
+ 3 - 4 : 2
+ 0 - 2 : 3
+ 4 - 5 : 6
+Total cost of MST = 14

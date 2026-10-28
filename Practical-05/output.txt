@@ -1,0 +1,1 @@
+Maximum value in knapsack of capacity 50: 240
